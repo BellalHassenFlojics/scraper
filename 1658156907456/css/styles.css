@@ -1,0 +1,90 @@
+/*--- reset ---*/
+/*--- reset5 Â© 2011 opensource.736cs.com MIT ---*/
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,
+s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,
+mark,menu,meter,nav,output,progress,section,summary,time,video{ border:0; outline:0; 
+	font-size:100%; vertical-align:baseline; background:transparent; margin:0;padding:0; }
+article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{ display:block; }
+nav ul{ list-style:none; }
+ol{ list-style:decimal; }
+ul{ list-style:disc; }
+ul ul{ list-style:circle; }
+blockquote,q{ quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after{ content:none; }
+ins{ text-decoration:underline; }
+del{ text-decoration:line-through; }
+mark{ background:none; }
+abbr[title],dfn[title]{ border-bottom:1px dotted #000; cursor:help; }
+table{ border-collapse:collapse;border-spacing:0; }
+hr{ display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0;}
+input[type=submit],input[type=button],button{ margin:0; padding:0;}
+input,select,a img{ vertical-align:middle; }
+a{ text-decoration: none; }
+
+.clear{ display: block; clear: both; visibility: hidden; line-height: 0; height: 0; zoom: 1; }
+
+body{ font-family: 'Open Sans'; overflow: hidden; }
+
+#switcher { height: 50px; background: #2f2f2f; z-index: 99999; position: fixed; width: 100%; }
+#switcher .inner-switcher{ max-width: 960px; padding: 0px 20px; margin: 0px auto; }
+#switcher .switcher-logo{ float: left; height: 25px; margin-top: 12px; margin-right: 23px; }
+#switcher #theme_select { float: left; font-size: 15px; line-height: 20px; padding: 15px 15px; width: 185px;
+	color: #cfcfcf; background: url('../images/dropdown.png') right center no-repeat #3f3f3f; cursor: pointer; }
+
+#iframe { margin-top: 50px; }
+
+/* theme list */
+#theme_list { margin: 0px auto; position: relative; float: left; }
+#theme_list ul { display: none; margin-left: 0px; list-style: none; width: 215px;  
+	position: absolute; left: 46px; top: 50px; background: #3f3f3f;
+	max-height: 300px; overflow-y: scroll; overflow-x: hidden;  }
+#theme_list ul li{ padding: 0px 15px; }
+#theme_list ul li a { display: block; padding: 10px 0px; font-size: 15px;
+	color: #cfcfcf; border-top: 1px solid #616161; }
+
+/* command button */
+#command_button{ float: right; font-size: 13px; font-weight: 400; }
+#command_button .purchase { float: left; }
+#command_button .purchase a { display: inline-block; padding: 15px 30px 15px 55px; line-height: 20px; height: 20px;
+	background: url('../images/trolley.png') 25px center no-repeat #181818; color: #fff; }
+
+#command_button .remove_frame { float: left; }
+#command_button .remove_frame a { display: inline-block; padding: 15px 0px 15px 55px; line-height: 20px; height: 20px; 
+	background: url('../images/cross.png') 25px center no-repeat; color: #fff; }
+
+/*--- tablet ---*/
+@media only screen and (max-width: 959px) {
+	#switcher .inner-switcher{ max-width: 768px; }
+}
+
+/*--- mobile landscape style ---*/
+@media only screen and (max-width: 767px) {
+	#switcher .inner-switcher{ max-width: 420px; }
+	#command_button .purchase a, #command_button .remove_frame a{ text-indent: -9999px;
+		padding: 15px 0px; width: 30px; background-position: center center; }
+}
+
+/*--- mobile portrait style ---*/
+@media only screen and (max-width: 419px) {
+	#switcher .inner-switcher{ max-width: 300px; min-width: 300px; }
+	#switcher #theme_select{ width: 115px; }
+}
+
+.iframe-wrap iframe{ max-width: 100%; }
+
+a.newsletter-link {
+    color: #aaa;
+    font-size: 13px;
+}
+a.newsletter-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 780px) {
+    .subscribe-form{ display:none !important; }
+}
+
